@@ -1,0 +1,114 @@
+@import '../scss/variables.scss';
+
+.todo_container_main {
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  flex-direction: column;
+  align-items: center;
+
+  .todo_form {
+    width: 82%;
+
+    .input_container {
+      width: 100%;
+      display: flex;
+
+      .todo_input {
+        border: $VeryDarkDesaturateBlue;
+        background-color: $VeryDarkGrayishBlue2;
+        border-radius: 0.2em;
+        color: $LightGrayishBlue;
+        width: inherit;
+        padding: .5em;
+      }
+    }
+  }
+}
+
+.todo_list_container {
+  width: 82%;
+  .todo_list {
+    margin-top: 2em;
+    width: 100%;
+    position: relative;
+
+    .todo {
+      display: flex;
+      justify-content: flex-start;
+      color: $LightGrayishBlue;
+      padding: .5em;
+
+     
+        .close {
+          color: $VeryDarkGrayishBlue;
+          margin-left: auto;
+          margin-right: 7px;
+        }
+    
+    }
+  }
+}
+table {
+  background-color: $VeryDarkGrayishBlue2;
+  border-radius: 0.5em;
+  tbody {
+    .table_row {
+      td {
+        border-bottom: solid 1px rgba(180, 169, 169, 0.664);
+      }
+    }
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
+
+input[type="radio"] {
+  margin-right: 14px;
+}
+
+.bottom_todo {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: $LightGrayishBlue;
+  position: relative;
+  bottom: 0;
+  margin-top: 3em;
+  .clear_completed:hover {
+    color: white;
+  }
+}
+
+.status_todo {
+  position: relative;
+  margin-top: 20px;
+  padding: 1em;
+  background-color: $VeryDarkGrayishBlue2;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0.5em;
+
+  .status_button {
+    background-color: transparent;
+    border: none;
+    color: $LightGrayishBlue;
+
+    &:hover{
+      color: $BrightBlue;
+    }
+    &:active{
+      color: $BrightBlue;
+    }
+  }
+
+  
+}
+.active{
+  color: $BrightBlue!important;
+}

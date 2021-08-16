@@ -1,0 +1,49 @@
+@import 'assets/scss/variables.scss';
+
+@font-face {
+  font-family: "JosefinSansBold";
+  src: local("JosefinSansBold"),
+   url("./fonts/Josefin_Sans/static/JosefinSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  }
+  
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-size: 18px;
+  margin: 0;
+  font-family: JosefinSans;
+  font-weight: 400;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.background_color{
+  background-color: $VeryDarkBlue;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: -2;
+  position: absolute;
+}
+.header {
+  width: 100%;
+  color: white;
+  font-weight: 900 !important;
+  letter-spacing: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 26px;
+
+  h1 {
+    font-size: 18px;
+  }
+}
